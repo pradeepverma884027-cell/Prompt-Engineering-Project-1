@@ -1,51 +1,33 @@
 # Prompt Engineering Project 1
 
-## Overview
-
-This project demonstrates Zero-Shot and Few-Shot Data Extraction using Prompt Engineering.
-
-The objective is to convert unstructured text into structured JSON output using:
-
-- Delimiters
-- Few-Shot Prompting
-- JSON Schema Enforcement
-- Temperature Control
-- Null Fallback Logic
+Zero-Shot and Few-Shot Data Extraction using Prompt Engineering.
 
 ## Features
 
-- Structured Data Extraction
+- Zero-Shot Prompting
+- Few-Shot Prompting
+- Delimiter-Based Prompt Design
+- JSON Schema Enforcement
+- Null Fallback Logic
 - Deterministic Outputs
-- JSON Formatting
-- Prompt Injection Protection
-- Few-Shot Learning
+- Streamlit Demonstration
 
-## Example
+## Tech Stack
 
-### Input
-
-Name: Pradeep Kumar
-Order Number: ORD12345
-Email: pradeep@gmail.com
-
-### Output
-
-```json
-{
-  "customer_name": "Pradeep Kumar",
-  "order_number": "ORD12345",
-  "email": "pradeep@gmail.com",
-  "phone": null
-}
-```
-
-## Technologies Used
-
-- Prompt Engineering
-- JSON
 - Python
+- Streamlit
+- JSON
+- Prompt Engineering
 - GitHub
 
-## Author
+## Project Architecture
 
-Pradeep Kumar
+Raw Text
+↓
+Prompt Design
+↓
+Data Extraction
+↓
+JSON Validation
+↓
+Structured Output
