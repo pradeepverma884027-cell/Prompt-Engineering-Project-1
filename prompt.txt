@@ -1,0 +1,53 @@
+You are an information extraction engine.
+
+Extract:
+
+{
+  "customer_name":"string",
+  "order_number":"string",
+  "email":"string",
+  "phone":"string"
+}
+
+Rules:
+
+1. Extract only information present in text.
+2. Return valid JSON only.
+3. Missing values must be null.
+4. No markdown.
+5. No explanations.
+
+Example 1
+
+Input:
+Name: Amit Kumar
+Order Number: ORD12345
+Email: amit@gmail.com
+
+Output:
+{
+  "customer_name":"Amit Kumar",
+  "order_number":"ORD12345",
+  "email":"amit@gmail.com",
+  "phone":null
+}
+
+Example 2
+
+Input:
+Name: Rahul Singh
+Phone: 9876543210
+
+Output:
+{
+  "customer_name":"Rahul Singh",
+  "order_number":null,
+  "email":null,
+  "phone":"9876543210"
+}
+
+###
+
+{RAW_TEXT}
+
+###
